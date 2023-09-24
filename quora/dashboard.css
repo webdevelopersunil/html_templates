@@ -11,7 +11,7 @@ body {
     direction: ltr;
     /* background-image: url('./bg.jpg'); */
     /* background-color: #f2f2f2; */
-    background-color: #443d3d;
+    /* background-color: #443d3d; */
     margin: 0;
 }
 
@@ -66,7 +66,7 @@ nav{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid black;
+    outline: 1px solid black;
     width: 16rem;
     height: 1.7rem;
     margin: 0 1rem;
@@ -80,6 +80,47 @@ nav{
     background-color: transparent;
     border: 0;
     outline: none;
+}
     
+.mainHome{
+    display: flex;
+    justify-content: center;
 }
 
+.mainHome section:nth-child(1){
+    border: 1px solid black;
+    position: relative;
+    width: 9rem;
+    height: 60vh;
+    padding: 4px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+.mainHome section div{
+    cursor: pointer;
+    margin: 4px 0;
+    padding: 9px 6px;
+}
+.mainHome section div:hover{
+    background-color: rgb(240, 238, 238);
+}
+
+.mainHome section div i {
+    margin-right: 4px;
+    font-size: 1.1rem;
+}
+.mainHome section div:nth-child(1){
+    background-color: rgb(240, 238, 238);
+    border-radius: 6PX;
+    color: grey;
+}
+
+.mainHome section:nth-child(2){
+    border: 1px solid black;
+    width: 42rem;
+    height: 90vh;
+
+}
