@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-size: calc(15px * var(--dynamic-font-scale,1));
@@ -10,18 +15,36 @@ body {
     margin: 0;
 }
 
-#menu-bar{
-    overflow: hidden;
-    text-align: center;
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+#menu-bar{
+    /* overflow: hidden;
+    text-align: center; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+
 #menu-bar a {
     text-decoration: none;
     color: green;
-    padding: 10px 10px 10px 10px;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    color: rgb(185, 43, 39);
+}
+#menu-bar a:hover {
+    opacity: 0.8;
+    background-color: rgb(243, 241, 241);
 }
 
 #menu-bar .logo{
@@ -31,8 +54,32 @@ body {
     font-size: 28px;
     font-weight: bolder;
     padding-right: 50px;
+    cursor: pointer;
 }
 
-.menu-bar input[type=text] {
-    border: 1px solid #ccc;  
+#menu-bar .logo:hover{
+    opacity: 0.8;
+    
 }
+
+#menu-bar .searchArea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    width: 16rem;
+    height: 1.7rem;
+    margin: 0 1rem;
+} 
+
+#menu-bar span i {
+    padding: 0 6px;
+}
+
+#menu-bar span input[type=text] {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    
+}
+
