@@ -120,6 +120,11 @@ nav{
     margin: 10px 10px;
 }
 
+.news-feed-container .divider{
+    background-color: #F1F2F2;
+    height: 15px;
+}
+
 .content .post-container .post-container-input{
     height: auto;
     
