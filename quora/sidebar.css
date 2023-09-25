@@ -1,0 +1,100 @@
+
+#menu-bar{
+    /* overflow: hidden;
+    text-align: center; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+
+#menu-bar a {
+    text-decoration: none;
+    color: green;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    color: rgb(185, 43, 39);
+}
+#menu-bar a:hover {
+    opacity: 0.8;
+    background-color: rgb(243, 241, 241);
+}
+
+#menu-bar .logo{
+    color: rgb(185, 43, 39);
+    text-decoration: none;
+    margin: 0;
+    font-size: 28px;
+    font-weight: bolder;
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+#menu-bar .logo:hover{
+    opacity: 0.8;
+    
+}
+
+#menu-bar .searchArea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    outline: 1px solid black;
+    width: 16rem;
+    height: 1.7rem;
+    margin: 0 1rem;
+} 
+
+#menu-bar span i {
+    padding: 0 6px;
+}
+
+#menu-bar span input[type=text] {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+    
+.mainHome{
+    display: flex;
+    justify-content: center;
+}
+
+.mainHome section:nth-child(1){
+    border: 1px solid black;
+    position: relative;
+    width: 9rem;
+    height: 60vh;
+    padding: 4px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+.mainHome section div{
+    cursor: pointer;
+    margin: 4px 0;
+    padding: 9px 6px;
+}
+.mainHome section div:hover{
+    background-color: rgb(240, 238, 238);
+}
+
+.mainHome section div i {
+    margin-right: 4px;
+    font-size: 1.1rem;
+}
+.mainHome section div:nth-child(1){
+    background-color: rgb(240, 238, 238);
+    border-radius: 6PX;
+    color: grey;
+}
+
+.mainHome section:nth-child(2){
+    border: 1px solid black;
+    width: 42rem;
+    height: 90vh;
+
+}

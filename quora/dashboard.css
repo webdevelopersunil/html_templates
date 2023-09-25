@@ -11,8 +11,9 @@ body {
     direction: ltr;
     /* background-image: url('./bg.jpg'); */
     /* background-color: #f2f2f2; */
-    /* background-color: #443d3d; */
+    background-color: #F1F2F2;
     margin: 0;
+    user-select: none;
 }
 
 nav{
@@ -81,46 +82,159 @@ nav{
     border: 0;
     outline: none;
 }
+
+
+.wrapper{
+    background-color: #F1F2F2;
+    height: auto;
+    width: 100%;
+}
+
+.container{
+    width: 40%;
+    margin: 20px auto;
+    background-color: #F1F2F2;
+    display: flex;
+}
+
+.container .side-bar{
+    width: 20%;
+    background-color: #F1F2F2;
+    margin-right: 10px;
+}
+
+.container .content{
+    width: 80%;
+    background-color: #F1F2F2;
+}
+
+
+/* Post Container Start*/
+
+.content .post-container{
+    background-color: #F1F2F2;
+}
+
+.content .news-feed-container{
+    background-color: white;
+    margin: 10px 10px;
+}
+
+.content .post-container .post-container-input{
+    height: auto;
     
-.mainHome{
-    display: flex;
-    justify-content: center;
 }
 
-.mainHome section:nth-child(1){
-    border: 1px solid black;
-    position: relative;
-    width: 9rem;
-    height: 60vh;
-    padding: 4px 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-
+.post-container-input a {
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 25px;
+    background-color: darkgrey;
+    margin-right: 10px;
 }
-.mainHome section div{
+
+.post-container-input input[type="text"] {
+    padding-left: 20px;
+    width: 500px;
+    outline: none;
+    border: black;
+    height: 35px;
+}
+
+.post-container .post-container-button{
+    display: flex;
+    margin: 10px auto;
+    
+}
+
+.post-container-button button{
+    margin: 10px 30px;
+    padding: 10px 30px;
+    border: none;
     cursor: pointer;
-    margin: 4px 0;
-    padding: 9px 6px;
-}
-.mainHome section div:hover{
-    background-color: rgb(240, 238, 238);
 }
 
-.mainHome section div i {
-    margin-right: 4px;
-    font-size: 1.1rem;
-}
-.mainHome section div:nth-child(1){
-    background-color: rgb(240, 238, 238);
-    border-radius: 6PX;
-    color: grey;
+.post-container-button .border{
+    /* border: 1px; */
 }
 
-.mainHome section:nth-child(2){
-    border: 1px solid black;
-    width: 42rem;
-    height: 90vh;
+/* Post Container End*/
+
+
+
+
+/* Side Bar Start*/
+
+.side-bar{
+    display: grid;
+    text-align: left;
+}
+
+.side-bar span{
+    padding: 5px 10px;
+    font-weight: 500;
+    text-transform: capitalize;
 
 }
+
+.side-bar span:hover{
+    background-color: rgb(200, 200, 200);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.side-bar span i{
+    padding: 5px 10px;
+}
+/* Side Bar End*/
+
+
+/* News Feed Container Start */
+
+.news-feed-container .post{
+    padding: 13px 30px;
+    display: block;
+}
+
+.post .post-profile{
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.post-profile span{
+    width: 30px;
+    height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.post-profile .post-title span{
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.post-profile .post-title p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.post-profile .cross{
+    margin-left: 291px;
+    cursor: pointer;
+}
+
+.post-profile .cross:hover{
+    color: red;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.post .post-content{
+    font-size: 14px;
+    color: rgb(31, 30, 30);
+}
+/* News Feed Container End*/
