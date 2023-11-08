@@ -227,17 +227,6 @@ nav{
     font-size: 14px;
 }
 
-.post-profile .cross{
-    margin-left: 291px;
-    cursor: pointer;
-}
-
-.post-profile .cross:hover{
-    color: red;
-    font-size: larger;
-    font-weight: 500;
-}
-
 .post .post-content{
     font-size: 14px;
     color: rgb(31, 30, 30);
